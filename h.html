@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Fetching Data Form NASA API</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <style>
+            #speed-container {
+                position: fixed;
+                right: 2em;
+                bottom: 0;
+            }
+            h1, h2, #start {
+                color: rgb(17, 16, 16);
+            }
+            table {
+                background-color: rgb(239, 243, 242);
+                margin-bottom: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="row">
+            <nav class="IndianRed">
+                <div class="nav-wrapper">
+                    <div class="col s12">
+                        <a href="#" class="brand-logo">Journey Into Space</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <main>
+                <section>
+                    <h1 class="center-align">Discover Space Today!</h1>
+                    <div class="row">
+                        <div class="col s12 m8 offset-m2">
+                            <div id="apod" class="card">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <aside>
+                    <h2>Let's start</h2>
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input type="text" id="start" class="datepicker">
+                                <label for="start">Select Date</label>
+                            </div>
+                        </div>
+                    </form>
+                    <table id="afeedTable" class="striped hide">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Is Dangerous</th>
+                                <th>Magnitude</th>
+                                <th>Min</th>
+                                <th>Max</th>
+                                <th>Miss Distance</th>
+                                <th>Approach Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="afeed">
+                            
+                        </tbody>
+                    </table>
+                </aside>
+            </main>
+        </div>
+        <footer class="page-footer IndianRed darken-1">
+            <div class="container">
+                <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Done by:</h5>
+                    <p class="grey-text text-lighten-4"> 
+                        <ol> 
+                            <li> Razan Alhussainan </li>
+                            <li> Lujain Almogren </li>
+                            <li> Lama Alrashda </li>
+                            <li> Deema Altuwayjiri </li>
+                        </ol> 
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Distributed System | CS427</h5>
+                    <ul>
+                        <li>372</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                © 2023
+                </div>
+            </div>
+        </footer>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="s.js"></script>
+    </body>
+</html>
